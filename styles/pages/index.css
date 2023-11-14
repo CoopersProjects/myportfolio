@@ -1,0 +1,83 @@
+.header {
+    background-color: saddlebrown;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .name {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 36px;
+    margin-left: 12px;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Had an issue with the checkbox being displayed so I got rid of it with display: none; */
+.menu-icon {
+    font-size: 36px;
+    cursor: pointer;
+    display: none; 
+    margin-right: 30px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+ /* Media query to show the menu icon and hide the navbar on smaller screens  */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 30px; 
+        background-color: #333;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: saddlebrown;
+}
