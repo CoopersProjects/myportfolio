@@ -2,7 +2,7 @@ header {
     background-color: saddlebrown;
     height: 50px;
     margin: 0;
-    padding: 10px 20px;
+    padding: 15px;
     border: 0;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-/* Had an issue with the checkbox being displayed so I got rid of it with display: none; */
+
+/* Had an issue with the checkbox being displayed so I got rid of it with display: none; here is my nav bar styling below */
 .menu-icon {
     font-size: 24px;
     cursor: pointer;
@@ -51,16 +52,53 @@ body {
     background-color: #555;
 }
 
+.welcome-section {
+    text-align: center;
+    background-color:burlywood;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.welcome-section img {
+    max-width: 80%;
+    margin-bottom: 20px;
+    height: 50%;
+}
+
+.welcome-section h2 {
+    color: black;
+    margin: 0;
+}
+
+.welcome-section p {
+    font-size: 24px;
+}
+
+
+/* Footer styling */
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     background-color: saddlebrown;
     color: white;
-    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.footer .socials-box {
+    text-align: center;
+}
+
+.footer .socials-box p {
+    margin: 0;
+    font-size: 16px;
 }
 
 .footer .social-media {
@@ -97,4 +135,22 @@ body {
     .navbar a {
         text-align: center;
     }
+
+    .welcome-section img {
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .welcome-section h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .welcome-section p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+
 }
+
+
+
+
