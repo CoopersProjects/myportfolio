@@ -8,3 +8,109 @@ header {
 .footer {
     background-color: royalblue;
 }
+
+/* Background and container */
+.contact-me {
+    background-color: blanchedalmond;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    justify-content: flex-start;
+    text-align:center;
+}
+
+.contact-me h2 {
+    margin-bottom: 60px;
+}
+/* Contact form display */
+.form-elements {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+.query-input {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    resize: none;
+}
+
+/* Submit button */
+.submit-button {
+    width: auto; 
+    padding: 15px; 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        width: 30px;
+        margin-left: 40px;
+    }
+
+    #menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px; 
+        right: 0;
+        background-color: #333;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+
+    .form-elements {
+            width: 100%;
+            grid-template-columns: 1fr; 
+        }
+    
+        label {
+            width: 100%; 
+        }
+    
+        .submit-button {
+            width: 100%; 
+            margin: 10px 0; 
+        }
+    }
