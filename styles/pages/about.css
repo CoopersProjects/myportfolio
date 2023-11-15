@@ -8,3 +8,90 @@ header {
 .footer {
     background-color: royalblue;
 }
+
+.about-me {
+    text-align: center;
+    background-color: bisque;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me h2 {
+    font-family: monospace;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.text-container {
+    border: 5px solid royalblue;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 70%;
+    background-color: black;
+}
+
+.text-container p {
+    font-family: monospace;
+    font-size: 24px;
+    color: white;
+}
+
+/* Resume button styling, with color change on hover for user interaction */
+.resume-button {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    background-color: royalblue;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color:cornflowerblue;
+}
+
+.button-container {
+    margin-top: 100px;
+}
+
+.button-container h2 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-family:monospace;
+}
+
+/* Navbar/header mediascreen info */
+/* Media query to show the menu icon and hide the navbar on smaller screens  */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px; 
+        right: 0;
+        background-color: #333;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+/* So the text doesn't look huge on a small screen */
+    .text-container p {
+        font-size: 14px;
+    }
+}

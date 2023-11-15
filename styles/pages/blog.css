@@ -8,3 +8,28 @@ header {
 .footer {
     background-color: orange;
 }
+
+/* Navbar/header mediascreen info */
+/* Media query to show the menu icon and hide the navbar on smaller screens  */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px; 
+        right: 0;
+        background-color: #333;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+}
