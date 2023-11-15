@@ -1,0 +1,10 @@
+@import "../components/_header.css";
+@import "../components/_footer.css";
+
+header {
+    background-color: coral;
+}
+
+.footer {
+    background-color: royalblue;
+}

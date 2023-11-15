@@ -1,56 +1,5 @@
-header {
-    background-color: saddlebrown;
-    height: 50px;
-    margin: 0;
-    padding: 15px;
-    border: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .name {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-body {
-    margin: 0;
-    border: 0;
-    font-family: arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Had an issue with the checkbox being displayed so I got rid of it with display: none; here is my nav bar styling below */
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-    display: none; 
-    margin-right: 30px;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.navbar {
-    display: flex;
-    margin-left: auto;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    transition: background-color 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #555;
-}
+@import "../components/_footer.css";
+@import "../components/_header.css";
 
 .welcome-section {
     text-align: center;
@@ -79,78 +28,41 @@ body {
 }
 
 
-/* Footer styling */
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: saddlebrown;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer .socials-box {
-    text-align: center;
-}
-
-.footer .socials-box p {
-    margin: 0;
-    font-size: 16px;
-}
-
-.footer .social-media {
-    display: flex;
-    justify-content: center;
-}
-
-.footer .social-media a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-}
-
- /* Media query to show the menu icon and hide the navbar on smaller screens  */
- @media screen and (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    #menu-toggle:checked + .menu-icon + .navbar {
-        display: flex;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px; /* Adjust as needed based on your header height */
-        right: 0;
-        background-color: #333;
-    }
-
-    .navbar a {
-        text-align: center;
-    }
+/* Footer styling imported  */
 
     .welcome-section img {
-        margin-bottom: 10px; /* Adjust margin for smaller screens */
+        margin-bottom: 10px; 
     }
 
     .welcome-section h2 {
-        font-size: 24px; /* Adjust font size for smaller screens */
+        font-size: 24px; 
     }
 
     .welcome-section p {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px; 
     }
 
-
-}
-
-
-
-
+/* Navbar/header mediascreen info */
+/* Media query to show the menu icon and hide the navbar on smaller screens  */
+@media screen and (max-width: 768px) {
+        .menu-icon {
+            display: block;
+        }
+    
+        #menu-toggle:checked + .menu-icon + .navbar {
+            display: flex;
+        }
+    
+        .navbar {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50px; 
+            right: 0;
+            background-color: #333;
+        }
+    
+        .navbar a {
+            text-align: center;
+        }
+    }
