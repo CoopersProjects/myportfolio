@@ -9,6 +9,7 @@ header {
     align-items: center;
 }
 
+/* Styling the text component, which is my name */
 header .name {
     color: white;
     text-decoration: none;
@@ -25,6 +26,7 @@ body {
 }
 
 /* Had an issue with the checkbox being displayed so I got rid of it with display: none; here is my nav bar styling below */
+/* Styling the hamburger menu graphical component (only visible on smaller screens) */
 .menu-icon {
     font-size: 32px;
     cursor: pointer;

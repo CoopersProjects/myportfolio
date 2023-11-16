@@ -9,6 +9,7 @@
     width: 100%;
 }
 
+/* footer styling and icons - graphic component*/ 
 .footer .socials-box {
     text-align: center;
 }
@@ -44,7 +45,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px; /* Adjust as needed based on your header height */
+        top: 50px; 
         right: 0;
         background-color: #333;
     }
@@ -54,15 +55,15 @@
     }
 
     .welcome-section img {
-        margin-bottom: 10px; /* Adjust margin for smaller screens */
+        margin-bottom: 10px; 
     }
 
     .welcome-section h2 {
-        font-size: 24px; /* Adjust font size for smaller screens */
+        font-size: 24px; 
     }
 
     .welcome-section p {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px; 
     }
 
     
