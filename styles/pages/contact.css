@@ -76,7 +76,9 @@ h2 {
 .submit-button:hover {
     background-color: #45a049;
 }
+
 @media screen and (max-width: 768px) {
+    /* To fix my header menu from moving to the wrong spot */
     .menu-icon {
         display: block;
         width: 30px;
@@ -100,6 +102,7 @@ h2 {
         text-align: center;
     }
 
+    /* To make my form work for smaller devices */
     .form-elements {
             width: 100%;
             grid-template-columns: 1fr; 

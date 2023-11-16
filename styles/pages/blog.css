@@ -3,15 +3,82 @@
 
 header {
     background-color: orange;
+    width: 100%;
 }
-
+/* Changed position to relative for this page since it's longer. */
 .footer {
     background-color: orange;
+    width: 100%; 
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(241, 187, 181);
+    overflow-x: hidden;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.blog-post {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(48% - 20px);
+    box-sizing: border-box;
+}
+
+h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 /* Navbar/header mediascreen info */
 /* Media query to show the menu icon and hide the navbar on smaller screens  */
 @media screen and (max-width: 768px) {
+    .blog-post {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    header {
+        margin-left: 0; 
+    }
+
+    .footer {
+        position: static; /* Reset the position for the footer on smaller screens */
+        width: 100%;
+    }
+
     .menu-icon {
         display: block;
     }
@@ -24,7 +91,7 @@ header {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px; 
+        top: 0; 
         right: 0;
         background-color: #333;
     }
