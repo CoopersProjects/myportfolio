@@ -42,13 +42,6 @@ header {
     color: white;
 }
 
-.text-container ol {
-    color: white;
-    font-family: monospace;
-    font-size: 24px;
-    margin-right: 50px;
-}
-
 /* Resume button styling, with color change on hover for user interaction */
 .resume-button {
     display: flex;
