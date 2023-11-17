@@ -1,6 +1,7 @@
 @import "../components/_footer.css";
 @import "../components/_header.css";
 
+/* Welcome section styling, as well as positioning */
 .welcome-section {
     text-align: center;
     background-color:burlywood;
@@ -12,33 +13,21 @@
     width: 100%;
 }
 
+/* Welcome section image */
 .welcome-section img {
     max-width: 80%;
     margin-bottom: 20px;
     height: 50%;
 }
+/* Welcome section heading and text */
 
 .welcome-section h2 {
     color: black;
     margin: 0;
+    font-size: 24px; 
 }
 
 .welcome-section p {
-    font-size: 24px;
-}
-
-
-/* Footer styling imported  */
-
-    .welcome-section img {
-        margin-bottom: 10px; 
-    }
-
-    .welcome-section h2 {
-        font-size: 24px; 
-    }
-
-    .welcome-section p {
         font-size: 16px; 
     }
 

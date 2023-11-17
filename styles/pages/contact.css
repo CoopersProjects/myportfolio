@@ -1,6 +1,8 @@
 @import "../components/_header.css";
 @import "../components/_footer.css";
 
+/* header and footer overrides for colors */
+
 header {
     background-color: coral;
 }
@@ -40,6 +42,7 @@ label {
     font-weight: bolder;
 }
 
+/* Input form styling */
 .form-input {
     width: 100%;
     padding: 8px;
@@ -51,7 +54,7 @@ label {
 h2 {
     color: #333;
 }
-
+/* Text area styling */
 .query-input {
     width: 100%;
     height: 100px;
@@ -73,6 +76,7 @@ h2 {
     display: block;
 }
 
+/* Change color on hover */
 .submit-button:hover {
     background-color: #45a049;
 }
